@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            touch-action: manipulation;
+            cursor: pointer;
+            user-select: none;
+            -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+        }
+
+        button {
+            padding: 10px 10px;
+            background-color: green;
+            border-radius: 100vh;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+            color: whitesmoke;
+        }
+
+        button:enabled {
+            outline: none;
+        }
+        div {
+            position: relative;
+            user-select: none;
+        }
+
+        #canvas {
+            border-color: black;
+            border-width: 1px;
+            border-style: solid;
+            user-select: none;
+        }
+
+        #container {
+            position: relative;
+            width: 450px;
+            height: 100px;
+            margin-left: 10px;
+            text-align: center;
+            user-select: none;
+        }
+
+        h1 {
+            margin-bottom: 5px;
+            user-select: none;
+        }
+
+        h2 {
+            user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <canvas id="canvas" width="450px" height="300px"></canvas>
+        <div id="container">
+            <h1>High Score</h1>
+            <h2 id="first"></h2>
+            <button>Reset HS</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
